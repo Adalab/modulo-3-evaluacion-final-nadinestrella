@@ -1,5 +1,5 @@
 import React from 'react';
-import harryTitle from '../images/harry.png';
+import harryTitle from '../images/harryGold.png';
 
 function Header({ characters }) {
   return (
