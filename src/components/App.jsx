@@ -7,6 +7,7 @@ import Filters from './filters/Filters';
 import Header from './Header';
 import { Route, Routes } from 'react-router-dom';
 import CharacterDetail from './characters/CharacterDetail';
+import Footer from './Footer';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -82,6 +83,7 @@ function App() {
           element={<CharacterDetail characters={characters} />}
         />
       </Routes>
+      <Footer />
     </>
   );
 }
