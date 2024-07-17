@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import '../../scss/layout/CharacterDetail.scss';
 
 import { Link } from 'react-router-dom';
 

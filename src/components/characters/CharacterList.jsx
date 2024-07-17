@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Character from './Character';
+import '../../scss/layout/CharacterList.scss';
 
 function CharacterList({ characters }) {
   const renderCharacters = characters.map((character) => {

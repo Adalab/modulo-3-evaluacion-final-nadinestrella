@@ -1,0 +1,71 @@
+//CHARACTER DETAIL
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(177, 151, 5);
+  color: white;
+  max-width: 250px;
+  height: fit-content;
+  font-size: 1.8 rem;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  top: -13px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @media (min-width: 768px) {
+    gap: 70px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    &:hover {
+      color: black;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  &__image {
+    &--img {
+      width: auto;
+      height: 202px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    text-wrap: nowrap;
+
+    &--status {
+      display: flex;
+      gap: 5px;
+    }
+    &--specie {
+      display: flex;
+      gap: 5px;
+    }
+    &--ul {
+      list-style: none;
+    }
+  }
+  &__li {
+    padding-left: 10px;
+  }
+}

@@ -1,11 +1,14 @@
 import React from 'react';
+import '../../scss/layout/Filter.scss';
 
 function FilterByName({ filterName, handleFilterName }) {
   return (
-    <div className="filters__byName">
-      <label className="filters__byName--label">Find a Character</label>
+    <div className="filtersContainer__byName">
+      <label className="filtersContainer__byName--label">
+        Find a Character
+      </label>
       <input
-        className="filters__byName--input"
+        className="filtersContainer__byName--input"
         type="text"
         placeholder="Harry Potter"
         value={filterName}

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../scss/layout/Filter.scss';
 
 function FilterByGender({ handleFilterGender, filterGender }) {
   const handleRadio = (ev) => {
@@ -6,8 +7,8 @@ function FilterByGender({ handleFilterGender, filterGender }) {
   };
 
   return (
-    <div className="filters__byGender">
-      <label className="filters__byGender--label"> By Gender</label>
+    <div className="filtersContainer__byGender">
+      <label className="filtersContainer__byGender--label"> By Gender</label>
 
       <input
         type="radio"
@@ -15,9 +16,9 @@ function FilterByGender({ handleFilterGender, filterGender }) {
         value="female"
         onChange={handleRadio}
         checked={filterGender === 'female'}
-        className="filters__byGender--input"
+        className="filtersContainer__byGender--input"
       />
-      <label className="filters__byGender--label">Female </label>
+      <label className="filtersContainer__byGender--label">Female </label>
 
       <input
         type="radio"
@@ -25,9 +26,9 @@ function FilterByGender({ handleFilterGender, filterGender }) {
         value="male"
         onChange={handleRadio}
         checked={filterGender === 'male'}
-        className="filters__byGender--input"
+        className="filtersContainer__byGender--input"
       />
-      <label className="filters__byGender--label">Male </label>
+      <label className="filtersContainer__byGender--label">Male </label>
     </div>
   );
 }

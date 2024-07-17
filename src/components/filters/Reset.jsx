@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../scss/layout/Filter.scss';
 
 function Reset({ resetButon }) {
   return (
-    <div className="filters__reset">
+    <div className="filtersContainer__reset">
       <button
-        className="filters__reset--btn"
+        className="filtersContainer__reset--btn"
         type="button"
         onClick={resetButon}
       >
