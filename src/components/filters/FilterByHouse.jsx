@@ -1,16 +1,17 @@
 import React from 'react';
+import '../../scss/layout/Filter.scss';
 
 function FilterByHouse({ handleFilterHouse, filterHouse }) {
   return (
-    <div className="filters__byHouse">
-      <label htmlFor="house" className="filters__byHouse--label">
+    <div className="filtersContainer__byHouse">
+      <label htmlFor="house" className="filtersContainer__byHouse--label">
         By House
       </label>
       <select
         value={filterHouse}
         id="house"
         onChange={(ev) => handleFilterHouse(ev.target.value)}
-        className="filters__byHouse--select"
+        className="filtersContainer__byHouse--select"
       >
         <option value="Gryffindor">Gryffindor</option>
         <option value="Ravenclaw">Ravenclaw</option>

@@ -3,6 +3,7 @@ import FilterByHouse from './FilterByHouse';
 import FilterByName from './FilterByName';
 import FilterByGender from './FilterByGender';
 import Reset from './Reset';
+import '../../scss/layout/Filter.scss';
 
 function Filters({
   filterName,
