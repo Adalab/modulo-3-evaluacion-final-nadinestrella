@@ -8,6 +8,7 @@ import Header from './Header';
 import { Route, Routes } from 'react-router-dom';
 import CharacterDetail from './characters/CharacterDetail';
 import Footer from './Footer';
+import ScrollToTop from 'react-scroll-up';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -59,6 +60,14 @@ function App() {
   return (
     <>
       <Header />
+      <ScrollToTop
+        showUnder={160}
+        style={{ zIndex: 30, bottom: 150, right: 50 }}
+      >
+        <span className="scroll">
+          <i className="fa-solid fa-arrow-up"></i>
+        </span>
+      </ScrollToTop>
 
       <Routes>
         <Route
@@ -83,6 +92,7 @@ function App() {
           element={<CharacterDetail characters={characters} />}
         />
       </Routes>
+
       <Footer />
     </>
   );

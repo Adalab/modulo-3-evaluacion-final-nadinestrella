@@ -11,7 +11,7 @@ function Footer() {
       </Link>
       <p className="footer__text">
         Buscador de personajes de Harry Potter{' '}
-        <i class="fa-solid fa-wand-magic"></i>
+        <i className="fa-solid fa-wand-magic"></i>
       </p>
       <nav className="footer__nav">
         Contacto
@@ -22,7 +22,7 @@ function Footer() {
               href="https://www.linkedin.com/in/nadinestrellavacas/"
               target="__black"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
@@ -31,7 +31,7 @@ function Footer() {
               href="https://github.com/nadinestrella"
               target="__black"
             >
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
         </ul>
